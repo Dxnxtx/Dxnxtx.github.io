@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EmpaquetAr - Cajas para Embalar</title>
+  <!-- Google Fonts: Montserrat, Signika, Numans -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Numans&family=Signika:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <img src="imagenes/Logo.png" alt="EmpaquetAr Logo" class="logo">
+      <div class="brand">
+        <h1>EmpaquetAr</h1>
+        <p>Soluciones profesionales para embalar, proteger y enviar.</p>  
+      </div>
+    </div>
+  </header>
+
+  <nav aria-label="Menú principal">
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#productos">Productos</a></li>
+      <li><a href="#reseñas">Reseñas</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main id="main">
+    <!-- Sección Inicio -->
+    <section id="inicio" class="hero">
+      <h2>Calidad que protege tu envío</h2>
+      <p>Trabajamos con emprendedores, tiendas y empresas para garantizar que cada paquete llegue intacto.</p>
+      <div class="video-container">
+        <div class="video-placeholder" onclick="playVideo(this)" role="button" aria-label="Reproducir video">
+          <img src="imagenes/playbutton.png" alt="Reproducir video" class="play-image" aria-hidden="true">
+          <p>Ver video </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Productos -->
+    <section id="productos" class="productos">
+      <h2>Nuestros Productos</h2>
+      <div class="productos-container">
+        <article class="card">
+          <img src="https://placehold.co/300x180/0B2029/FEFEFD?text=Caja+Pequeña" alt="Caja pequeña de cartón" aria-hidden="false">
+          <div class="card-body">
+            <h3>Caja Pequeña</h3>
+            <p>Ideal para joyas, accesorios o productos pequeños. Medidas: 15×10×8 cm.</p>
+            <p class="precio">$890</p>
+          </div>
+          <button class="btn-carrito" aria-label="Agregar Caja Pequeña al carrito"><i class="fas fa-box" aria-hidden="true"></i> Agregar</button>
+        </article>
+        <article class="card">
+          <img src="https://placehold.co/300x180/0B2029/FEFEFD?text=Caja+Mediana" alt="Caja mediana de cartón" aria-hidden="false">
+          <div class="card-body">
+            <h3>Caja Mediana</h3>
+            <p>Perfecta para libros, ropa o kits. Medidas: 30×20×15 cm.</p>
+            <p class="precio">$1.490</p>
+          </div>
+          <button class="btn-carrito" aria-label="Agregar Caja Mediana al carrito"><i class="fas fa-box" aria-hidden="true"></i> Agregar</button>
+        </article>
+        <article class="card">
+          <img src="https://placehold.co/300x180/0B2029/FEFEFD?text=Kit+Embalaje" alt="Kit de embalaje completo" aria-hidden="false">
+          <div class="card-body">
+            <h3>Kit Embalaje Pro</h3>
+            <p>Caja + cinta adhesiva + relleno de papel. Listo para enviar.</p>
+            <p class="precio">$2.290</p>
+          </div>
+          <button class="btn-carrito" aria-label="Agregar Kit Embalaje Pro al carrito"><i class="fas fa-box" aria-hidden="true"></i> Agregar</button>
+        </article>
+        <!-- Productos ficticios añadidos -->
+        <article class="card">
+          <img src="https://placehold.co/300x180/0B2029/FEFEFD?text=Caja+Grande" alt="Caja grande de cartón" aria-hidden="false">
+          <div class="card-body">
+            <h3>Caja Grande</h3>
+            <p>Perfecta para electrodomésticos, kits grandes y envíos voluminosos.</p>
+            <p class="precio">$3.450</p>
+          </div>
+          <button class="btn-carrito" aria-label="Agregar Caja Grande al carrito"><i class="fas fa-box" aria-hidden="true"></i> Agregar</button>
+        </article>
+
+        <article class="card">
+          <img src="https://placehold.co/300x180/0B2029/FEFEFD?text=Caja+Eco" alt="Caja ecológica de cartón reciclado" aria-hidden="false">
+          <div class="card-body">
+            <h3>Caja Eco</h3>
+            <p>Material reciclado, ideal para marcas sostenibles.</p>
+            <p class="precio">$1.150</p>
+          </div>
+          <button class="btn-carrito" aria-label="Agregar Caja Eco al carrito"><i class="fas fa-box" aria-hidden="true"></i> Agregar</button>
+        </article>
+
+        <article class="card">
+          <img src="https://placehold.co/300x180/0B2029/FEFEFD?text=Sobre+Protect" alt="Sobre acolchado protector" aria-hidden="false">
+          <div class="card-body">
+            <h3>Sobre Protect</h3>
+            <p>Sobre acolchado para objetos frágiles y documentos importantes.</p>
+            <p class="precio">$520</p>
+          </div>
+          <button class="btn-carrito" aria-label="Agregar Sobre Protect al carrito"><i class="fas fa-box" aria-hidden="true"></i> Agregar</button>
+        </article>
+
+        <article class="card">
+          <img src="https://placehold.co/300x180/0B2029/FEFEFD?text=Kit+Premium" alt="Kit premium de embalaje" aria-hidden="false">
+          <div class="card-body">
+            <h3>Kit Premium</h3>
+            <p>Caja reforzada + cinta industrial + burbujas. Para envíos internacionales.</p>
+            <p class="precio">$4.890</p>
+          </div>
+          <button class="btn-carrito" aria-label="Agregar Kit Premium al carrito"><i class="fas fa-box" aria-hidden="true"></i> Agregar</button>
+        </article>
+        <article class="card">
+          <img src="https://placehold.co/300x180/0B2029/FEFEFD?text=Bolsa+Burbujas" alt="Bolsa de burbujas protectora" aria-hidden="false">
+          <div class="card-body">
+            <h3>Bolsa Burbujas</h3>
+            <p>Bolsa de burbujas para envolver piezas pequeñas y proteger durante el transporte.</p>
+            <p class="precio">$650</p>
+          </div>
+          <button class="btn-carrito" aria-label="Agregar Bolsa Burbujas al carrito"><i class="fas fa-box" aria-hidden="true"></i> Agregar</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- Reseñas -->
+    <section id="reseñas" class="reseñas">
+      <h2>Lo que dicen nuestros clientes</h2>
+      <div class="reseñas-grid">
+        <div class="review">
+          <p>"Mis envíos llegan perfectos. La calidad es excelente."</p>
+          <strong>— Julian C., </strong>
+        </div>
+        <div class="review">
+          <p>"Lamentablemente mi hijo ahora es una caja."</p>
+          <strong>— Homero J.S., tienda online</strong>
+        </div>
+        <div class="review">
+          <p>"El kit de embalaje me ahorró horas de preparación. ¡10/10!"</p>
+          <strong>— Cristina P., artesana</strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto (Formspree) -->
+    <section id="contacto" class="contacto">
+      <h2>¿Necesitás cajas personalizadas?</h2>
+      <p>Contanos tu proyecto y te armamos una solución a medida.</p>
+      <form action="https://formspree.io/f/xldpopnl" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+        <button type="submit">Enviar consulta</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 EmpaquetAr. Todos los derechos reservados.</p>
+    <p><a href="mailto:info@empaquetAr.com">info@empaquetAr.com</a></p>
+  </footer>
+
+  <script>
+    function playVideo(element) {
+      const iframe = document.createElement('iframe');
+      iframe.src = 'https://www.youtube.com/embed/TQpv7tV7LCc?autoplay=1';
+      iframe.width = '560';
+      iframe.height = '315';
+      iframe.frameBorder = '0';
+      iframe.setAttribute('title', 'Video de EmpaquetAr');
+      iframe.allowFullscreen = true;
+      iframe.allow = 'autoplay; encrypted-media; picture-in-picture';
+      element.parentNode.replaceChild(iframe, element);
+    }
+  </script>
+</body>
+</html>
